@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:paddingBottom="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yourTranslucentColor"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+        <ImageView
+            android:id="@+id/imgNotify"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/notification"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            />
+        <View
+            android:id="@+id/lineHr"
+            android:layout_width="0.3dp"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@id/imgNotify"
+            android:background="#ffff"
+            android:layout_alignBottom="@id/imgNotify"
+            android:layout_toRightOf="@id/imgNotify"
+            android:layout_toEndOf="@id/imgNotify"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/txtBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/lineHr"
+            android:layout_toRightOf="@id/lineHr"
+            android:text="@string/byAdmin"
+            android:textColor="#ffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/youMustSign"
+            android:layout_below="@id/txtBy"
+            android:layout_alignStart="@id/txtBy"
+            android:layout_alignLeft="@id/txtBy"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/gray"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:id="@+id/relativeQ">
+
+
+    <ImageView
+        android:id="@+id/imgCircle"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/circle"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/txtQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hiiiiiiiiiiiiii"
+        android:layout_toEndOf="@id/imgCircle"
+        android:layout_toRightOf="@id/imgCircle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="21dp"
+        android:textSize="16sp"
+        android:textColor="#ffff"
+        android:layout_marginLeft="10dp" />
+    <View
+        android:layout_width="0.2dp"
+        android:layout_height="wrap_content"
+        android:background="#ffff"
+        android:layout_alignBottom="@id/imgCircle"
+        android:layout_marginBottom="20dp"
+        android:layout_alignStart="@id/imgCircle"
+        android:layout_marginStart="9dp"
+        android:layout_alignParentTop="true"
+        />
+    <View
+        android:layout_width="0.2dp"
+        android:layout_height="wrap_content"
+        android:background="#ffff"
+        android:layout_below="@id/imgCircle"
+        android:layout_alignStart="@id/imgCircle"
+        android:layout_marginStart="9dp"
+        android:layout_alignBottom="@id/viewHoriz"
+        />
+    <View
+        android:id="@+id/viewHoriz"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#ffff"
+        android:layout_below="@id/txtQ"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@id/txtQ"/>
+
+</RelativeLayout>

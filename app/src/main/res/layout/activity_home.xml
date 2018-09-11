@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    >
+
+    <ScrollView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="270dp" />
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/relativeButton"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/menue"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/linearSearch"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/border_search"
+            android:layout_toEndOf="@id/relativeButton"
+            android:layout_toRightOf="@id/relativeButton"
+            >
+
+            <ImageView
+                android:id="@+id/imgSearch"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="7dp"
+                android:src="@mipmap/search" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/transparent"
+                android:hint="Search"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:windowSoftInputMode="stateHidden"
+                 />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/slider"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/searchHere"
+            android:textColor="@color/textColors"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerCategories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/txtItems"
+            android:layout_marginTop="10dp"
+            />
+
+    </RelativeLayout>
+    </ScrollView>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:itemTextAppearance="@style/menu_text_style"
+        android:background="@mipmap/sidebar"
+        app:menu="@menu/navigation_menu"
+        >
+
+    </android.support.design.widget.NavigationView>
+
+
+
+</android.support.v4.widget.DrawerLayout>

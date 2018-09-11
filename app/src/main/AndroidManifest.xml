@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.m3lyan.entmaa">
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="locale|layoutDirection|orientation"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionAndStatusBar">
+        <activity android:name=".Activity.SignUpActivity" />
+        <activity android:name=".Activity.SignInActivity" android:theme="@style/splashScreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.HomeActivity">
+            <!--android:theme="@style/splashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter-->
+        </activity>
+        <activity android:name=".Activity.TypesActivity" />
+        <activity android:name=".Activity.CallUsActivity" />
+        <activity android:name=".Activity.AboutActivity" />
+        <activity android:name=".Activity.ConfigActivity" />
+        <activity android:name=".Activity.TypesDetailsActivity" />
+        <activity android:name=".Activity.BankAccActivity" />
+        <activity android:name=".Activity.PackagesActivity" />
+        <activity android:name=".Activity.BillActivity" />
+        <activity android:name=".Activity.BillAfterActivity" />
+        <activity android:name=".Activity.AddRateActivity" />
+        <activity android:name=".Activity.AddQActivity" />
+        <activity android:name=".Activity.QuestionsActivity" />
+        <activity android:name=".Activity.NotifyActivity" />
+        <activity android:name=".Activity.ReplyQActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@mipmap/home"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/nav_backage"
+        android:icon="@mipmap/gifts"
+        android:title="@string/backage" />
+    <item
+        android:id="@+id/nav_consult"
+        android:icon="@mipmap/consult_members"
+        android:title="@string/consult" />
+    <item
+        android:id="@+id/nav_notify"
+        android:icon="@mipmap/notifications"
+        android:title="@string/notify" />
+    <item
+        android:id="@+id/nav_config"
+        android:icon="@mipmap/setting2"
+        android:title="@string/config" />
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@mipmap/about_us"
+        android:title="@string/whowe" />
+    <item
+        android:id="@+id/nav_call"
+        android:icon="@mipmap/phone2"
+        android:title="@string/callus" />
+    <item
+        android:id="@+id/nav_lang"
+        android:title="@string/lang"
+        android:icon="@drawable/ic_menu_manage"
+        app:actionLayout="@layout/spinner"/>
+    <item
+        android:id="@+id/nav_exit"
+        android:icon="@mipmap/exit"
+        android:title="@string/exit" />
+
+</group>
+</menu>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@mipmap/splash2">
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="200dp"
+        android:layout_height="102dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="112dp"
+        android:src="@mipmap/logo" />
+
+    <EditText
+        android:id="@+id/etxtUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/imgLogo"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:layout_toRightOf="@+id/imgUser"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/imgUser"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp" />
+
+    <EditText
+        android:id="@+id/etxtPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etxtUser"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/pass"
+        android:inputType="textPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/imgPass"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/imgPass"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"/>
+
+    <ImageView
+        android:id="@+id/imgPass"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignTop="@id/etxtPass"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/password" />
+
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSignIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="@string/noaccount"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/txtForget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/etxtPass"
+        android:layout_marginTop="5dp"
+        android:text="@string/forgetpass"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:id="@+id/imgUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/username"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignTop="@id/etxtUser"
+        android:layout_marginTop="15dp"
+        />
+
+    <ImageButton
+        android:id="@+id/btnSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtForget"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@color/transparent"
+        android:onClick="OnClickSignIn"
+        android:src="@mipmap/print_finger" />
+
+</RelativeLayout>
+</ScrollView>
