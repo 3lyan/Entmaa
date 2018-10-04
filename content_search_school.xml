@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="false">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/relativeTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/relativeState"
+        android:background="@drawable/lastborder_spinner"
+        android:paddingStart="10dp"
+        >
+        <EditText
+            android:id="@+id/editSchoolName"
+            android:layout_width="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="40dp"
+            android:paddingStart="40dp"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/enterSchoolName"
+            android:background="@drawable/my_background"
+            android:textSize="13sp"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/school"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="3dp" />
+    </RelativeLayout>-->
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/relativeState"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/relativeLvl"
+        android:background="@drawable/lastborder_spinner"
+        android:paddingStart="10dp"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/location"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="3dp"/>
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:src="@mipmap/drop_down"/>
+        <Spinner
+            android:id="@+id/spinState"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/my_background"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/relativeLvl"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/relativeSys"
+        android:background="@drawable/secondrelative_spin"
+        android:paddingStart="10dp"
+        >
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@mipmap/mortarboard"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="3dp"/>
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:src="@mipmap/drop_down"/>
+        <Spinner
+            android:id="@+id/spinLvl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/my_background"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="50dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/imageView16"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/firstborder_relative"
+        android:paddingStart="10dp"
+        android:id="@+id/relativeSys"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/global"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="3dp"/>
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:src="@mipmap/drop_down"/>
+        <Spinner
+            android:id="@+id/spinSys"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/my_background"
+            />
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/relativeState"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:background="@drawable/relative_button_border"
+        android:onClick="onClickSearch">
+
+
+        <TextView
+            android:id="@+id/txtsearchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="false"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="TextView"
+            android:textColor="@android:color/background_light" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignTop="@+id/txtsearchBtn"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toStartOf="@+id/txtsearchBtn"
+            app:srcCompat="@mipmap/search" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/toolbar2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/logo"
+        android:focusableInTouchMode="true"/>
+
+</RelativeLayout>
+</ScrollView>
